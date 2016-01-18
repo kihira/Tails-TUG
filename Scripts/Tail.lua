@@ -1,10 +1,8 @@
--- Tails
-include("Scripts/Characters/3PModel.lua")
-table.insert(ThirdPersonModel.ESlots["Chest"], "Geo_FoxTail")
+-- Tail
 
 -------------------------------------------------------------------------------
-if Tails == nil then
-	Tails = EternusEngine.ModScriptClass.Subclass("Tails")
+if Tail == nil then
+    Tail = EternusEngine.ModScriptClass.Subclass("Tail")
 end
 
 -------------------------------------------------------------------------------

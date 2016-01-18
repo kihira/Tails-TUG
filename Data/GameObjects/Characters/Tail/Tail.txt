@@ -1,0 +1,1988 @@
+{
+
+	Tail
+	{
+
+		Tail
+		{
+			# Mark this GameObject as a startup-time loaded assets.
+			Preload
+			NoCull
+
+			Transform
+			{
+			}
+
+			Script
+			{
+				file = "Scripts/Tail.lua"
+				class = "Tail"
+			}
+
+			MorphGraphics
+			{
+				scale = 0.023
+				model = "Character/Tail/Rig.fbx"
+				Offset = <0.0, 0.0, 0.0>
+
+				SubmeshDirectories
+				{
+					"Data/Gear/3P/"
+				}
+
+				Diffuse
+				{
+				}
+
+				Specular
+				{
+				}
+
+				Glow
+				{
+				}
+				Normal
+				{
+				}
+				Animations
+				{
+
+					Idle
+					{
+						path = "Character/Tail/Idle.fbx"
+					}
+				}
+				BlendTree
+				{
+					root = "Full Body Slot"
+
+					Nodes
+					{
+
+						BlendLeaf
+						{
+							name = "Idle Node"
+							animation = "Idle"
+						}
+
+						BlendLeaf
+						{
+							name = "Idle Misc Node"
+							animation = "Idle_Misc"
+						}
+
+						BlendLeaf
+						{
+							name = "Idle Shield Node"
+							animation = "Idle_Shield"
+						}
+
+						BlendLeaf
+						{
+							name = "Sneak Idle Shield Node"
+							animation = "Sneak_Idle_Shield"
+						}
+
+						BlendLeaf
+						{
+							name = "Idle Two Handed Mask Node"
+							animation = "Idle_Two_Handed_Mask"
+						}
+
+						BlendLeaf
+						{
+							name = "Idle Two Handed Left Mask Node"
+							animation = "Idle_Two_Handed_Left_Mask"
+						}
+
+						BlendLeaf
+						{
+							name = "Jump Up Node"
+							animation = "Jump_Start"
+							restartOnActivate = 1
+							loop = 0
+						}
+
+						BlendLeaf
+						{
+							name = "Jump Node"
+							animation = "Jump_Loop"
+							restartOnActivate = 1
+						}
+
+						BlendLeaf
+						{
+							name = "Jump Down Node"
+							animation = "Jump_Land"
+							restartOnActivate = 1
+							loop = 0
+						}
+
+						BlendLeaf
+						{
+							name = "Jump Down Walk Fwd Node"
+							animation = "Jump_Walk_Fwd_Land"
+							restartOnActivate = 1
+							loop = 0
+						}
+
+						BlendLeaf
+						{
+							name = "Jump Down Walk Bk Node"
+							animation = "Jump_Walk_Bk_Land"
+							restartOnActivate = 1
+							loop = 0
+						}
+
+						BlendLeaf
+						{
+							name = "Jump Down Walk Rt Node"
+							animation = "Jump_Walk_Rt_Land"
+							restartOnActivate = 1
+							loop = 0
+						}
+
+						BlendLeaf
+						{
+							name = "Jump Down Walk Lf Node"
+							animation = "Jump_Walk_Lf_Land"
+							restartOnActivate = 1
+							loop = 0
+						}
+
+						BlendLeaf
+						{
+							name = "Jump Down Run Fwd Node"
+							animation = "Jump_Run_Fwd_Land"
+							restartOnActivate = 1
+							loop = 0
+						}
+
+						BlendLeaf
+						{
+							name = "Jump Down Run Bk Node"
+							animation = "Jump_Run_Bk_Land"
+							restartOnActivate = 1
+							loop = 0
+						}
+
+						BlendLeaf
+						{
+							name = "Jump Down Run Rt Node"
+							animation = "Jump_Run_Rt_Land"
+							restartOnActivate = 1
+							loop = 0
+						}
+
+						BlendLeaf
+						{
+							name = "Jump Down Run Lf Node"
+							animation = "Jump_Run_Lf_Land"
+							restartOnActivate = 1
+							loop = 0
+						}
+
+						BlendLeaf
+						{
+							name = "Jump Down Idle Node"
+							animation = "Jump_Idle_Land"
+							restartOnActivate = 1
+							loop = 0
+						}
+
+						BlendLeaf
+						{
+							name = "Jump Up Wpn Node"
+							animation = "Jump_Start_Wpn"
+							restartOnActivate = 1
+							loop = 0
+						}
+
+						BlendLeaf
+						{
+							name = "Jump Wpn Node"
+							animation = "Jump_Loop_Wpn"
+							restartOnActivate = 1
+						}
+
+						BlendLeaf
+						{
+							name = "Jump Down Wpn Node"
+							animation = "Jump_Land_Wpn"
+							restartOnActivate = 1
+							loop = 0
+						}
+
+						BlendLeaf
+						{
+							name = "Jump Up Shield Node"
+							animation = "Jump_Start_Shield"
+							restartOnActivate = 1
+							loop = 0
+						}
+
+						BlendLeaf
+						{
+							name = "Jump Shield Node"
+							animation = "Jump_Loop_Shield"
+							restartOnActivate = 1
+						}
+
+						BlendLeaf
+						{
+							name = "Jump Down Shield Node"
+							animation = "Jump_Land_Shield"
+							restartOnActivate = 1
+							loop = 0
+						}
+
+						#BlendLeaf
+						#{
+						#	name = "Jump Up Misc Node"
+						#	animation = "Jump_Start_Misc"
+						#	restartOnActivate = 1
+						#	loop = 0
+						#}
+
+						#BlendLeaf
+						#{
+						#	name = "Jump Misc Node"
+						#	animation = "Jump_Loop_Misc"
+						#	restartOnActivate = 1
+						#}
+
+						#BlendLeaf
+						#{
+						#	name = "Jump Down Misc Node"
+						#	animation = "Jump_Land_Misc"
+						#	restartOnActivate = 1
+						#	loop = 0
+						#}
+
+						BlendLeaf
+						{
+							name = "Jump Up 2hnd Rt Node"
+							animation = "Jump_Start_Two_Handed_Right"
+							restartOnActivate = 1
+							loop = 0
+						}
+
+						BlendLeaf
+						{
+							name = "Jump 2hnd Rt Node"
+							animation = "Jump_Loop_Two_Handed_Right"
+							restartOnActivate = 1
+						}
+
+						BlendLeaf
+						{
+							name = "Jump Down 2hnd Rt Node"
+							animation = "Jump_Land_Two_Handed_Right"
+							restartOnActivate = 1
+							loop = 0
+						}
+
+						BlendLeaf
+						{
+							name = "Jump Up 2hnd Lf Node"
+							animation = "Jump_Start_Two_Handed_Left"
+							restartOnActivate = 1
+							loop = 0
+
+						}
+
+						BlendLeaf
+						{
+							name = "Jump 2hnd Lf Node"
+							animation = "Jump_Loop_Two_Handed_Left"
+							restartOnActivate = 1
+						}
+
+						BlendLeaf
+						{
+							name = "Jump Down 2hnd Lf Node"
+							animation = "Jump_Land_Two_Handed_Left"
+							restartOnActivate = 1
+							loop = 0
+						}
+
+						BlendLeaf
+						{
+							name = "Walk Node"
+							animation = "Walk"
+						}
+
+						BlendLeaf
+						{
+							name = "Run Node"
+							animation = "Run"
+						}
+
+						BlendLeaf
+						{
+							name = "Strafe Forward Left Node"
+							animation = "Strafe_Forward_Left"
+						}
+
+						BlendLeaf
+						{
+							name = "Strafe Forward Right Node"
+							animation = "Strafe_Forward_Right"
+						}
+
+						BlendLeaf
+						{
+							name = "Strafe Back Left Node"
+							animation = "Strafe_Back_Left"
+						}
+
+						BlendLeaf
+						{
+							name = "Strafe Back Right Node"
+							animation = "Strafe_Back_Right"
+						}
+
+						BlendLeaf
+						{
+							name = "Strafe Left Node"
+							animation = "Strafe_Left"
+						}
+
+						BlendLeaf
+						{
+							name = "Strafe Right Node"
+							animation = "Strafe_Right"
+							start_offset = "0.38"
+						}
+
+						BlendLeaf
+						{
+							name = "Walk Back Node"
+							animation = "Walk_Back"
+						}
+
+						BlendLeaf
+						{
+							name = "Run Strafe Left Node"
+							animation = "Run_Strafe_Left"
+						}
+
+						BlendLeaf
+						{
+							name = "Run Strafe Right Node"
+							animation = "Run_Strafe_Right"
+						}
+
+						BlendLeaf
+						{
+							name = "Run Back Node"
+							animation = "Run_Back"
+						}
+
+						BlendLeaf
+						{
+							name = "Run Shield Node"
+							animation = "Run_Shield_Forward"
+						}
+
+						BlendLeaf
+						{
+							name = "Run Shield Right Node"
+							animation = "Run_Shield_Right"
+						}
+
+						BlendLeaf
+						{
+							name = "Sneak Idle Node"
+							animation = "Sneak_Idle"
+						}
+
+						BlendLeaf
+						{
+							name = "Sneak Forward Node"
+							animation = "Sneak_Forward"
+						}
+
+						BlendLeaf
+						{
+							name = "Sneak Backward Node"
+							animation = "Sneak_Back"
+						}
+
+						BlendLeaf
+						{
+							name = "Sneak Strafe Left Node"
+							animation = "Sneak_Left"
+						}
+
+						BlendLeaf
+						{
+							name = "Sneak Strafe Right Node"
+							animation = "Sneak_Right"
+						}
+
+						BlendLeaf
+						{
+							name = "Sneak Run Forward Node"
+							animation = "Sneak_Run_Forward"
+						}
+
+						BlendLeaf
+						{
+							name = "Sneak Run Backward Node"
+							animation = "Sneak_Run_Back"
+						}
+
+						BlendLeaf
+						{
+							name = "Sneak Run Strafe Left Node"
+							animation = "Sneak_Run_Left"
+						}
+
+						BlendLeaf
+						{
+							name = "Sneak Run Strafe Right Node"
+							animation = "Sneak_Run_Right"
+						}
+
+						BlendLeaf
+						{
+							name = "Sneak Run Strafe Forward Left Node"
+							animation = "Sneak_Run_Forward_Left"
+						}
+
+						BlendLeaf
+						{
+							name = "Sneak Run Strafe Forward Right Node"
+							animation = "Sneak_Run_Forward_Right"
+						}
+
+						BlendLeaf
+						{
+							name = "Sneak Run Strafe Back Left Node"
+							animation = "Sneak_Run_Backward_Left"
+						}
+
+						BlendLeaf
+						{
+							name = "Sneak Run Strafe Back Right Node"
+							animation = "Sneak_Run_Backward_Right"
+						}
+
+						BlendLeaf
+						{
+							name = "Run Strafe Forward Left Node"
+							animation = "Run_Strafe_Forward_Left"
+						}
+
+						BlendLeaf
+						{
+							name = "Run Strafe Forward Right Node"
+							animation = "Run_Strafe_Forward_Right"
+						}
+
+						BlendLeaf
+						{
+							name = "Run Strafe Back Left Node"
+							animation = "Run_Strafe_Back_Left"
+						}
+
+						BlendLeaf
+						{
+							name = "Run Strafe Back Right Node"
+							animation = "Run_Strafe_Back_Right"
+						}
+
+						BlendLeaf
+						{
+							name = "Sneak Strafe Forward Left Node"
+							animation = "Sneak_Forward_Left"
+						}
+
+						BlendLeaf
+						{
+							name = "Sneak Strafe Forward Right Node"
+							animation = "Sneak_Forward_Right"
+						}
+
+						BlendLeaf
+						{
+							name = "Sneak Strafe Back Left Node"
+							animation = "Sneak_Back_Left"
+						}
+
+						BlendLeaf
+						{
+							name = "Sneak Strafe Back Right Node"
+							animation = "Sneak_Back_Right"
+						}
+
+
+
+						BlendLeaf
+						{
+							name = "Sneak Shield Forward Node"
+							animation = "Sneak_Shield_Forward"
+						}
+
+						BlendLeaf
+						{
+							name = "Sneak Shield Left Node"
+							animation = "Sneak_Shield_Left"
+						}
+
+						BlendLeaf
+						{
+							name = "Sneak Shield Right Node"
+							animation = "Sneak_Shield_Right"
+						}
+
+						BlendLeaf
+						{
+							name = "Sneak Shield Backward Node"
+							animation = "Sneak_Shield_Back"
+						}
+
+						BlendLeaf
+						{
+							name = "Sneak Shield Fast Forward Node"
+							animation = "Sneak_Shield_Run_Forward"
+						}
+
+						BlendLeaf
+						{
+							name = "Sneak Shield Fast Left Node"
+							animation = "Sneak_Shield_Run_Left"
+						}
+
+						BlendLeaf
+						{
+							name = "Sneak Shield Fast Right Node"
+							animation = "Sneak_Shield_Run_Right"
+						}
+
+						BlendLeaf
+						{
+							name = "Sneak Shield Fast Backward Node"
+							animation = "Sneak_Shield_Run_Back"
+						}
+
+
+
+						BlendLeaf
+						{
+							name = "Run Forward Two Handed Mask Node"
+							animation = "Run_Forward_Two_Handed_Mask"
+						}
+
+						BlendLeaf
+						{
+							name = "Run Backward Two Handed Mask Node"
+							animation = "Run_Backward_Two_Handed_Mask"
+						}
+
+						BlendLeaf
+						{
+							name = "Run Two Handed Left Mask Node"
+							animation = "Run_Two_Handed_Left_Mask"
+						}
+
+						BlendLeaf
+						{
+							name = "Walk Two Handed Mask Node"
+							animation = "Walk_Forward_Two_Handed_Mask"
+						}
+
+
+
+						BlendLeaf
+						{
+							name = "Fly Node"
+							animation = "Fly_Idle"
+						}
+						#***********************************************************************************
+
+
+
+						BlendLeaf
+						{
+							name = "Consume Loop Node"
+							animation = "Consume_Loop"
+							restartOnActivate = 1
+						}
+
+						BlendLeaf
+						{
+							name = "Pour Loop Node"
+							animation = "Pour_Loop"
+							restartOnActivate = 1
+						}
+
+						BlendLeaf
+						{
+							name = "Slingshot Hold Node"
+							animation = "Slingshot_Hold"
+							restartOnActivate = 1
+						}
+
+						BlendLeaf
+						{
+							name = "Slingshot Hold2 Node"
+							animation = "Slingshot_Hold2"
+							restartOnActivate = 1
+						}
+
+						BlendLeaf
+						{
+							name = "Channeling Hold Node"
+							animation = "Channeling_Hold"
+							restartOnActivate = 1
+						}
+
+						BlendLeaf
+						{
+							name = "Cast Hold Node"
+							animation = "Cast_Hold"
+							restartOnActivate = 1
+						}
+
+						BlendLeaf
+						{
+							name = "Cast Hold2 Node"
+							animation = "Cast_Hold"
+							restartOnActivate = 1
+						}
+
+						BlendLeaf
+						{
+							name = "Throw Hold Node"
+							animation = "Throw_Hold"
+							restartOnActivate = 1
+						}
+
+						BlendLeaf
+						{
+							name = "Throw Potion Hold Node"
+							animation = "Throw_Potion_Hold"
+							restartOnActivate = 1
+						}
+
+						BlendLeaf
+						{
+							name = "Vswing Loop Node"
+							animation = "Vswing_Loop"
+							restartOnActivate = 1
+						}
+
+						BlendLeaf
+						{
+							name = "Hswing Loop Node"
+							animation = "Hswing_Loop"
+							restartOnActivate = 1
+						}
+
+						BlendLeaf
+						{
+							name = "Shovel Loop Node"
+							animation = "Shovel_Loop"
+							restartOnActivate = 1
+						}
+
+						BlendLeaf
+						{
+							name = "Hoe Loop Node"
+							animation = "Hoe_Loop"
+							restartOnActivate = 1
+						}
+
+						BlendLeaf
+						{
+							name = "Skin Loop Node"
+							animation = "Skin_Loop"
+							restartOnActivate = 1
+						}
+
+						BlendLeaf
+						{
+							name = "Shield Block Loop Node"
+							animation = "Shield_Block_Loop"
+							restartOnActivate = 1
+						}
+
+						BlendLeaf
+						{
+							name = "Shield Crouch Block Loop Node"
+							animation = "Shield_Crouch_Block_Loop"
+							restartOnActivate = 1
+						}
+
+						#***********************************************************************************
+
+
+
+						BlendLeaf
+						{
+							name = "Walk Two Handed Left Mask Node"
+							animation = "Walk_Two_Handed_Left_Mask"
+						}
+						BlendByDirection
+						{
+							name = "Directional Run Two Handed Mask Node"
+							blendSpeed = 0.1
+
+							Directions
+							{
+								Forward = "Run Forward Two Handed Mask Node"
+								Left = "Run Forward Two Handed Mask Node"
+								Right = "Run Forward Two Handed Mask Node"
+								Backward = "Run Backward Two Handed Mask Node"
+								Idle = "Idle Two Handed Mask Node"
+								ForwardLeft = "Run Forward Two Handed Mask Node"
+								ForwardRight = "Run Forward Two Handed Mask Node"
+								BackLeft = "Run Backward Two Handed Mask Node"
+								BackRight = "Run Backward Two Handed Mask Node"
+							}
+						}
+
+						BlendByBoneMask
+						{
+							name = "Idle Two Handed Bone Mask Node"
+
+							Mask
+							{
+								"Bn_R_Shlder01" = 1.0
+								"Bn_R_Arm01" = 1.0
+								"Bn_R_Elbow01" = 1.0
+								"Bn_R_4Arm01" = 1.0
+								"Bn_R_Twist01" = 1.0
+								"Bn_R_Wrist01" = 1.0
+								"Bn_R_ThumbRoot01" = 1.0
+								"Bn_R_ThumbA01" = 1.0
+								"Bn_R_ThumbB01" = 1.0
+								"Bn_R_MidA01" = 1.0
+								"Bn_R_MidB01" = 1.0
+								"Bn_R_MidC01" = 1.0
+								"Bn_R_PinkA01" = 1.0
+								"Bn_R_PinkB01" = 1.0
+								"Bn_R_PinkC01" = 1.0
+								"Bn_R_PointA01" = 1.0
+								"Bn_R_PointB01" = 1.0
+								"Bn_R_PointC01" = 1.0
+								"Bn_L_Shlder01" = 1.0
+								"Bn_L_Arm01" = 1.0
+								"Bn_L_Elbow01" = 1.0
+								"Bn_L_4Arm01" = 1.0
+								"Bn_L_Twist01" = 1.0
+								"Bn_L_Wrist01" = 1.0
+								"Bn_L_ThumbRoot01" = 1.0
+								"Bn_L_ThumbA01" = 1.0
+								"Bn_L_ThumbB01" = 1.0
+								"Bn_L_MidA01" = 1.0
+								"Bn_L_MidB01" = 1.0
+								"Bn_L_MidC01" = 1.0
+								"Bn_L_PinkA01" = 1.0
+								"Bn_L_PinkB01" = 1.0
+								"Bn_L_PinkC01" = 1.0
+								"Bn_L_PointA01" = 1.0
+								"Bn_L_PointB01" = 1.0
+								"Bn_L_PointC01" = 1.0
+								"Bn_Tool01" = 1.0
+							}
+
+							Children
+							{
+								0 = "Idle Node"
+								1 = "Idle Two Handed Mask Node"
+							}
+						}
+
+						BlendByBoneMask
+						{
+							name = "Idle Two Handed Left Bone Mask Node"
+
+							Mask
+							{
+								"Bn_R_Shlder01" = 1.0
+								"Bn_R_Arm01" = 1.0
+								"Bn_R_Elbow01" = 1.0
+								"Bn_R_4Arm01" = 1.0
+								"Bn_R_Twist01" = 1.0
+								"Bn_R_Wrist01" = 1.0
+								"Bn_R_ThumbRoot01" = 1.0
+								"Bn_R_ThumbA01" = 1.0
+								"Bn_R_ThumbB01" = 1.0
+								"Bn_R_MidA01" = 1.0
+								"Bn_R_MidB01" = 1.0
+								"Bn_R_MidC01" = 1.0
+								"Bn_R_PinkA01" = 1.0
+								"Bn_R_PinkB01" = 1.0
+								"Bn_R_PinkC01" = 1.0
+								"Bn_R_PointA01" = 1.0
+								"Bn_R_PointB01" = 1.0
+								"Bn_R_PointC01" = 1.0
+								"Bn_L_Shlder01" = 1.0
+								"Bn_L_Arm01" = 1.0
+								"Bn_L_Elbow01" = 1.0
+								"Bn_L_4Arm01" = 1.0
+								"Bn_L_Twist01" = 1.0
+								"Bn_L_Wrist01" = 1.0
+								"Bn_L_ThumbRoot01" = 1.0
+								"Bn_L_ThumbA01" = 1.0
+								"Bn_L_ThumbB01" = 1.0
+								"Bn_L_MidA01" = 1.0
+								"Bn_L_MidB01" = 1.0
+								"Bn_L_MidC01" = 1.0
+								"Bn_L_PinkA01" = 1.0
+								"Bn_L_PinkB01" = 1.0
+								"Bn_L_PinkC01" = 1.0
+								"Bn_L_PointA01" = 1.0
+								"Bn_L_PointB01" = 1.0
+								"Bn_L_PointC01" = 1.0
+								"Bn_Tool01" = 1.0
+							}
+
+							Children
+							{
+								0 = "Idle Node"
+								1 = "Idle Two Handed Left Mask Node"
+							}
+						}
+
+						BlendState
+						{
+							name = "Idle WithWithout Weapon Node"
+							state_name = "WeaponState"
+							transitionTime = 0.0
+
+							States
+							{
+								0 = "Idle Node"
+								1 = "Idle Node"
+								2 = "Idle Two Handed Bone Mask Node"
+								3 = "Idle Two Handed Left Bone Mask Node"
+								4 = "Idle Misc Node"
+							}
+						}
+
+						BlendByDirection
+						{
+							name = "Walk Directional Node"
+							blendSpeed = 0.1
+
+							Directions
+							{
+								Forward = "Walk Node"
+								Left = "Strafe Left Node"
+								Right = "Strafe Right Node"
+								Backward = "Walk Back Node"
+								Idle = "Idle WithWithout Weapon Node"
+								ForwardLeft = "Strafe Forward Left Node"
+								ForwardRight = "Strafe Forward Right Node"
+								BackLeft = "Strafe Back Left Node"
+								BackRight = "Strafe Back Right Node"
+							}
+						}
+
+						BlendByDirection
+						{
+							name = "Run Directional Node"
+							blendSpeed = 0.1
+
+							Directions
+							{
+								Forward = "Run Node"
+								Left = "Run Strafe Left Node"
+								Right = "Run Strafe Right Node"
+								Backward = "Run Back Node"
+								Idle = "Idle WithWithout Weapon Node"
+								ForwardLeft = "Run Strafe Forward Left Node"
+								ForwardRight = "Run Strafe Forward Right Node"
+								BackLeft = "Run Strafe Back Left Node"
+								BackRight = "Run Strafe Back Right Node"
+							}
+						}
+
+						BlendByDirection
+						{
+							name = "Sneak Directional Node"
+							blendSpeed = 0.1
+
+							Directions
+							{
+								Forward = "Sneak Forward Node"
+								Left = "Sneak Strafe Left Node"
+								Right = "Sneak Strafe Right Node"
+								Backward = "Sneak Backward Node"
+								Idle = "Sneak Idle Node"
+								ForwardLeft = "Sneak Strafe Forward Left Node"
+								ForwardRight = "Sneak Strafe Forward Right Node"
+								BackLeft = "Sneak Strafe Back Left Node"
+								BackRight = "Sneak Strafe Back Right Node"
+							}
+						}
+
+						BlendByDirection
+						{
+							name = "Sneak Run Directional Node"
+							blendSpeed = 0.1
+
+							Directions
+							{
+								Forward = "Sneak Run Forward Node"
+								Left = "Sneak Run Strafe Left Node"
+								Right = "Sneak Run Strafe Right Node"
+								Backward = "Sneak Run Backward Node"
+								Idle = "Sneak Idle Node"
+								ForwardLeft = "Sneak Run Strafe Forward Left Node"
+								ForwardRight = "Sneak Run Strafe Forward Right Node"
+								BackLeft = "Sneak Run Strafe Back Left Node"
+								BackRight = "Sneak Run Strafe Back Right Node"
+							}
+						}
+
+						BlendByBoneMask
+						{
+							name = "Run Two Handed Bone Mask Node"
+
+							Mask
+							{
+								"Bn_R_Shlder01" = 1.0
+								"Bn_R_Arm01" = 1.0
+								"Bn_R_Elbow01" = 1.0
+								"Bn_R_4Arm01" = 1.0
+								"Bn_R_Twist01" = 1.0
+								"Bn_R_Wrist01" = 1.0
+								"Bn_R_ThumbRoot01" = 1.0
+								"Bn_R_ThumbA01" = 1.0
+								"Bn_R_ThumbB01" = 1.0
+								"Bn_R_MidA01" = 1.0
+								"Bn_R_MidB01" = 1.0
+								"Bn_R_MidC01" = 1.0
+								"Bn_R_PinkA01" = 1.0
+								"Bn_R_PinkB01" = 1.0
+								"Bn_R_PinkC01" = 1.0
+								"Bn_R_PointA01" = 1.0
+								"Bn_R_PointB01" = 1.0
+								"Bn_R_PointC01" = 1.0
+								"Bn_L_Shlder01" = 1.0
+								"Bn_L_Arm01" = 1.0
+								"Bn_L_Elbow01" = 1.0
+								"Bn_L_4Arm01" = 1.0
+								"Bn_L_Twist01" = 1.0
+								"Bn_L_Wrist01" = 1.0
+								"Bn_L_ThumbRoot01" = 1.0
+								"Bn_L_ThumbA01" = 1.0
+								"Bn_L_ThumbB01" = 1.0
+								"Bn_L_MidA01" = 1.0
+								"Bn_L_MidB01" = 1.0
+								"Bn_L_MidC01" = 1.0
+								"Bn_L_PinkA01" = 1.0
+								"Bn_L_PinkB01" = 1.0
+								"Bn_L_PinkC01" = 1.0
+								"Bn_L_PointA01" = 1.0
+								"Bn_L_PointB01" = 1.0
+								"Bn_L_PointC01" = 1.0
+								"Bn_Tool01" = 1.0
+							}
+
+							Children
+							{
+								0 = "Run Directional Node"
+								1 = "Directional Run Two Handed Mask Node"
+							}
+						}
+
+						BlendByBoneMask
+						{
+							name = "Run Two Handed Left Bone Mask Node"
+
+							Mask
+							{
+								"Bn_R_Shlder01" = 1.0
+								"Bn_R_Arm01" = 1.0
+								"Bn_R_Elbow01" = 1.0
+								"Bn_R_4Arm01" = 1.0
+								"Bn_R_Twist01" = 1.0
+								"Bn_R_Wrist01" = 1.0
+								"Bn_R_ThumbRoot01" = 1.0
+								"Bn_R_ThumbA01" = 1.0
+								"Bn_R_ThumbB01" = 1.0
+								"Bn_R_MidA01" = 1.0
+								"Bn_R_MidB01" = 1.0
+								"Bn_R_MidC01" = 1.0
+								"Bn_R_PinkA01" = 1.0
+								"Bn_R_PinkB01" = 1.0
+								"Bn_R_PinkC01" = 1.0
+								"Bn_R_PointA01" = 1.0
+								"Bn_R_PointB01" = 1.0
+								"Bn_R_PointC01" = 1.0
+								"Bn_L_Shlder01" = 1.0
+								"Bn_L_Arm01" = 1.0
+								"Bn_L_Elbow01" = 1.0
+								"Bn_L_4Arm01" = 1.0
+								"Bn_L_Twist01" = 1.0
+								"Bn_L_Wrist01" = 1.0
+								"Bn_L_ThumbRoot01" = 1.0
+								"Bn_L_ThumbA01" = 1.0
+								"Bn_L_ThumbB01" = 1.0
+								"Bn_L_MidA01" = 1.0
+								"Bn_L_MidB01" = 1.0
+								"Bn_L_MidC01" = 1.0
+								"Bn_L_PinkA01" = 1.0
+								"Bn_L_PinkB01" = 1.0
+								"Bn_L_PinkC01" = 1.0
+								"Bn_L_PointA01" = 1.0
+								"Bn_L_PointB01" = 1.0
+								"Bn_L_PointC01" = 1.0
+								"Bn_Tool01" = 1.0
+							}
+
+							Children
+							{
+								0 = "Run Directional Node"
+								1 = "Run Two Handed Left Mask Node"
+							}
+						}
+
+						BlendState
+						{
+							name = "Run WithWithout Weapon Node"
+							state_name = "WeaponState"
+							transitionTime = 0.0
+
+							States
+							{
+								0 = "Run Directional Node"
+								1 = "Run Directional Node"
+								2 = "Run Two Handed Bone Mask Node"
+								3 = "Run Two Handed Left Bone Mask Node"
+								4 = "Run Directional Node"
+							}
+						}
+
+						BlendByBoneMask
+						{
+							name = "Walk Two Handed Bone Mask Node"
+
+							Mask
+							{
+								"Bn_R_Shlder01" = 1.0
+								"Bn_R_Arm01" = 1.0
+								"Bn_R_Elbow01" = 1.0
+								"Bn_R_4Arm01" = 1.0
+								"Bn_R_Twist01" = 1.0
+								"Bn_R_Wrist01" = 1.0
+								"Bn_R_ThumbRoot01" = 1.0
+								"Bn_R_ThumbA01" = 1.0
+								"Bn_R_ThumbB01" = 1.0
+								"Bn_R_MidA01" = 1.0
+								"Bn_R_MidB01" = 1.0
+								"Bn_R_MidC01" = 1.0
+								"Bn_R_PinkA01" = 1.0
+								"Bn_R_PinkB01" = 1.0
+								"Bn_R_PinkC01" = 1.0
+								"Bn_R_PointA01" = 1.0
+								"Bn_R_PointB01" = 1.0
+								"Bn_R_PointC01" = 1.0
+								"Bn_L_Shlder01" = 1.0
+								"Bn_L_Arm01" = 1.0
+								"Bn_L_Elbow01" = 1.0
+								"Bn_L_4Arm01" = 1.0
+								"Bn_L_Twist01" = 1.0
+								"Bn_L_Wrist01" = 1.0
+								"Bn_L_ThumbRoot01" = 1.0
+								"Bn_L_ThumbA01" = 1.0
+								"Bn_L_ThumbB01" = 1.0
+								"Bn_L_MidA01" = 1.0
+								"Bn_L_MidB01" = 1.0
+								"Bn_L_MidC01" = 1.0
+								"Bn_L_PinkA01" = 1.0
+								"Bn_L_PinkB01" = 1.0
+								"Bn_L_PinkC01" = 1.0
+								"Bn_L_PointA01" = 1.0
+								"Bn_L_PointB01" = 1.0
+								"Bn_L_PointC01" = 1.0
+								"Bn_Tool01" = 1.0
+							}
+
+							Children
+							{
+								0 = "Walk Directional Node"
+								1 = "Walk Two Handed Mask Node"
+							}
+						}
+
+						BlendByBoneMask
+						{
+							name = "Walk Two Handed Left Bone Mask Node"
+
+							Mask
+							{
+								"Bn_R_Shlder01" = 1.0
+								"Bn_R_Arm01" = 1.0
+								"Bn_R_Elbow01" = 1.0
+								"Bn_R_4Arm01" = 1.0
+								"Bn_R_Twist01" = 1.0
+								"Bn_R_Wrist01" = 1.0
+								"Bn_R_ThumbRoot01" = 1.0
+								"Bn_R_ThumbA01" = 1.0
+								"Bn_R_ThumbB01" = 1.0
+								"Bn_R_MidA01" = 1.0
+								"Bn_R_MidB01" = 1.0
+								"Bn_R_MidC01" = 1.0
+								"Bn_R_PinkA01" = 1.0
+								"Bn_R_PinkB01" = 1.0
+								"Bn_R_PinkC01" = 1.0
+								"Bn_R_PointA01" = 1.0
+								"Bn_R_PointB01" = 1.0
+								"Bn_R_PointC01" = 1.0
+								"Bn_L_Shlder01" = 1.0
+								"Bn_L_Arm01" = 1.0
+								"Bn_L_Elbow01" = 1.0
+								"Bn_L_4Arm01" = 1.0
+								"Bn_L_Twist01" = 1.0
+								"Bn_L_Wrist01" = 1.0
+								"Bn_L_ThumbRoot01" = 1.0
+								"Bn_L_ThumbA01" = 1.0
+								"Bn_L_ThumbB01" = 1.0
+								"Bn_L_MidA01" = 1.0
+								"Bn_L_MidB01" = 1.0
+								"Bn_L_MidC01" = 1.0
+								"Bn_L_PinkA01" = 1.0
+								"Bn_L_PinkB01" = 1.0
+								"Bn_L_PinkC01" = 1.0
+								"Bn_L_PointA01" = 1.0
+								"Bn_L_PointB01" = 1.0
+								"Bn_L_PointC01" = 1.0
+								"Bn_Tool01" = 1.0
+							}
+
+							Children
+							{
+								0 = "Walk Directional Node"
+								1 = "Walk Two Handed Left Mask Node"
+							}
+						}
+
+						BlendState
+						{
+							name = "Walk WithWithout Weapon Node"
+							state_name = "WeaponState"
+							transitionTime = 0.0
+
+							States
+							{
+								0 = "Walk Directional Node"
+								1 = "Walk Directional Node"
+								2 = "Walk Two Handed Bone Mask Node"
+								3 = "Walk Two Handed Left Bone Mask Node"
+								4 = "Walk Directional Node"
+							}
+						}
+
+						BlendState
+						{
+							name = "Standing Player State Node"
+							state_name = "PlayerState"
+							transitionTime = 0.3
+
+							States
+							{
+								0 = "Walk WithWithout Weapon Node"
+								1 = "Run WithWithout Weapon Node"
+								2 = "Idle WithWithout Weapon Node"
+								15 = "Fly Node"
+							}
+						}
+
+						BlendState
+						{
+							name = "Crouching Player State Node"
+							state_name = "PlayerState"
+							transitionTime = 0.3
+							initialState = 12
+
+							States
+							{
+								12 = "Sneak Directional Node"
+								13 = "Sneak Run Directional Node"
+								11 = "Sneak Idle Node"
+								15 = "Fly Node"
+							}
+						}
+
+						BlendState
+						{
+							name = "Player Posture Node"
+							state_name = "CrouchState"
+							initialState = 1
+							transitionTime = 0.1
+
+							States
+							{
+								0 = "Crouching Player State Node"
+								1 = "Standing Player State Node"
+							}
+						}
+
+						BlendState
+						{
+							name = "Jump Land Switch"
+							state_name = "PlayerState"
+							transitionTime = 0.09
+							initialState = 0
+
+							States
+							{
+								# Walk
+								0 = "Player Posture Node"
+								# Run
+								1 = "Jump Down Node"
+								# Idle
+								2 = "Jump Down Idle Node"
+								# Crouch Idle
+								11 = "Player Posture Node"
+								# Crouch Walk
+								12 = "Player Posture Node"
+								# Crouch Run
+								13 = "Player Posture Node"
+								# Flying
+								15 = "Player Posture Node"
+							}
+						}
+
+						BlendByFall
+						{
+							name = "Fall Node"
+							transitionTime = 1.0
+
+							States
+							{
+								Up = "Jump Up 2hnd Lf Node"
+								Loop = "Jump 2hnd Lf Node"
+								Land = "Jump Down 2hnd Lf Node"
+								Ground = "Player Posture Node"
+							}
+						}
+
+						BlendByFall
+						{
+							name = "Fall With Weapon Node"
+							transitionTime = 1.0
+
+							States
+							{
+								Up = "Jump Up 2hnd Lf Node"
+								Loop = "Jump 2hnd Lf Node"
+								Land = "Jump Down 2hnd Lf Node"
+								Ground = "Player Posture Node"
+							}
+						}
+
+						BlendByFall
+						{
+							name = "Fall With Misc Node"
+							transitionTime = 1.0
+
+							States
+							{
+								Up = "Jump Up 2hnd Lf Node"
+								Loop = "Jump 2hnd Lf Node"
+								Land = "Jump Down 2hnd Lf Node"
+								Ground = "Player Posture Node"
+							}
+						}
+
+						BlendByFall
+						{
+							name = "Fall Two-Handed Node"
+							transitionTime = 1.0
+
+							States
+							{
+								Up = "Jump Up 2hnd Rt Node"
+								Loop = "Jump 2hnd Rt Node"
+								Land = "Jump Down 2hnd Rt Node"
+								Ground = "Player Posture Node"
+							}
+						}
+
+						BlendByFall
+						{
+							name = "Fall Two-Handed Left Node"
+							transitionTime = 1.0
+
+							States
+							{
+								Up = "Jump Up 2hnd Lf Node"
+								Loop = "Jump 2hnd Lf Node"
+								Land = "Jump Down 2hnd Lf Node"
+								Ground = "Player Posture Node"
+							}
+						}
+
+						BlendState
+						{
+							name = "Fall WithWithout Weapon Node"
+							state_name = "WeaponState"
+							transitionTime = 0.0
+
+							States
+							{
+								0 = "Fall Node"
+								1 = "Fall With Weapon Node"
+								2 = "Fall Two-Handed Node"
+								3 = "Fall Two-Handed Left Node"
+								4 = "Fall Node"
+							}
+						}
+
+						BlendByGraph
+						{
+							name = "Stance Node"
+							initialState = "Default"
+							stateVariable = "Stance"
+
+							States
+							{
+								Default
+								{
+									Node = "Fall WithWithout Weapon Node"
+									Transitions
+									{
+										Consume
+										{
+											destinationState = "Consuming"
+											animation = "Consume_In"
+										}
+										Pour
+										{
+											destinationState = "Pouring"
+											animation = "Pour_In"
+										}
+										Hold
+										{
+											destinationState = "Holding"
+											animation = "Throw_In"
+											blendInTime = 0.2
+											blendOutTime = 0.2
+										}
+										Cast
+										{
+											destinationState = "Casting"
+											animation = "Cast_In"
+										}
+										HoldPotion
+										{
+											destinationState = "HoldingPotion"
+											animation = "Throw_Potion_In"
+										}
+										SlingshotHold
+										{
+											destinationState = "SlingshotHolding"
+											animation = "Slingshot_In"
+										}
+										Vswing
+										{
+											destinationState = "Vswinging"
+											animation = "Vswing_In"
+											blendInTime = 0.1
+										}
+										Hswing
+										{
+											destinationState = "Hswinging"
+											animation = "Hswing_In"
+											blendInTime = 0.1
+										}
+										Shovel
+										{
+											destinationState = "Shoveling"
+											animation = "Shovel_In"
+											blendInTime = 0.1
+										}
+										Hoe
+										{
+											destinationState = "Hoeing"
+											animation = "Hoe_In"
+										}
+										Skin
+										{
+											destinationState = "Skinning"
+											animation = "Skin_In"
+										}
+										ShieldBlock
+										{
+											destinationState = "ShieldBlocking"
+											animation = "Shield_Block_In"
+										}
+									}
+								}
+								Consuming
+								{
+									Node = "Consume Loop Node"
+									Transitions
+									{
+										BackToDefault
+										{
+											destinationState = "Default"
+											animation = "Consume_Out"
+										}
+									}
+								}
+								Pouring
+								{
+									Node = "Pour Loop Node"
+									Transitions
+									{
+										BackToDefault
+										{
+											destinationState = "Default"
+											animation = "Pour_Out"
+										}
+									}
+								}
+								SlingshotHolding
+								{
+									Node = "Slingshot Hold Node"
+									Transitions
+									{
+										Shoot
+										{
+											destinationState = "SlingshotHolding2"
+											animation = "Slingshot_Shoot"
+										}
+										ShootLast
+										{
+											destinationState = "Default"
+											animation = "Slingshot_Shoot"
+										}
+										Cancel
+										{
+											destinationState = "Default"
+											animation = "Slingshot_Out"
+										}
+									}
+								}
+								SlingshotHolding2
+								{
+									Node = "Slingshot Hold2 Node"
+									Transitions
+									{
+										Shoot
+										{
+											destinationState = "SlingshotHolding"
+											animation = "Slingshot_Shoot"
+										}
+										ShootLast
+										{
+											destinationState = "Default"
+											animation = "Slingshot_Shoot"
+										}
+										Cancel
+										{
+											destinationState = "Default"
+											animation = "Slingshot_Out"
+										}
+									}
+								}
+								Casting
+								{
+									Node = "Cast Hold Node"
+									Transitions
+									{
+										Shoot
+										{
+											destinationState = "Casting2"
+											animation = "Cast"
+										}
+										ShootLast
+										{
+											destinationState = "Default"
+											animation = "Cast"
+										}
+										Channel
+										{
+											destinationState = "Channeling"
+											animation = "Channeling_In"
+										}
+										Cancel
+										{
+											destinationState = "Default"
+											animation = "Cast_Cancel"
+										}
+									}
+								}
+								Casting2
+								{
+									Node = "Cast Hold2 Node"
+									Transitions
+									{
+										Shoot
+										{
+											destinationState = "Casting"
+											animation = "Cast"
+										}
+										ShootLast
+										{
+											destinationState = "Default"
+											animation = "Cast"
+										}
+										Channel
+										{
+											destinationState = "Channeling"
+											animation = "Channeling_In"
+										}
+										Cancel
+										{
+											destinationState = "Default"
+											animation = "Cast_Cancel"
+										}
+									}
+								}
+								Channeling
+								{
+									Node = "Channeling Hold Node"
+									Transitions
+									{
+										Cancel
+										{
+											destinationState = "Casting"
+											animation = "Channeling_Out"
+										}
+									}
+								}
+								Holding
+								{
+									Node = "Throw Hold Node"
+									Transitions
+									{
+										Throw
+										{
+											destinationState = "Default"
+											animation = "Throw"
+										}
+										Cancel
+										{
+											destinationState = "Default"
+											animation = "Throw_Cancel"
+											blendInTime = 0.2
+											blendOutTime = 0.09
+										}
+									}
+								}
+								HoldingPotion
+								{
+									Node = "Throw Potion Hold Node"
+									Transitions
+									{
+										Throw
+										{
+											destinationState = "Default"
+											animation = "Throw_Potion"
+										}
+										Cancel
+										{
+											destinationState = "Default"
+											animation = "Throw_Potion_Cancel"
+										}
+									}
+								}
+								Vswinging
+								{
+									Node = "Vswing Loop Node"
+									Transitions
+									{
+										BackToDefault
+										{
+											destinationState = "Default"
+											animation = "Vswing_Out"
+											blendOutTime = 0.1
+										}
+									}
+								}
+								Hswinging
+								{
+									Node = "Hswing Loop Node"
+									Transitions
+									{
+										BackToDefault
+										{
+											destinationState = "Default"
+											animation = "Hswing_Out"
+											blendOutTime = 0.1
+										}
+									}
+								}
+								Shoveling
+								{
+									Node = "Shovel Loop Node"
+									Transitions
+									{
+										BackToDefault
+										{
+											destinationState = "Default"
+											animation = "Shovel_Out"
+											blendOutTime = 0.1
+										}
+									}
+								}
+								Hoeing
+								{
+									Node = "Hoe Loop Node"
+									Transitions
+									{
+										BackToDefault
+										{
+											destinationState = "Default"
+											animation = "Hoe_Out"
+										}
+									}
+								}
+								Skinning
+								{
+									Node = "Skin Loop Node"
+									Transitions
+									{
+										BackToDefault
+										{
+											destinationState = "Default"
+											animation = "Skin_Out"
+										}
+									}
+								}
+								ShieldBlocking
+								{
+									Node = "Shield Block Loop Node"
+									Transitions
+									{
+										BackToDefault
+										{
+											destinationState = "Default"
+											animation = "Shield_Block_Out"
+										}
+									}
+								}
+							}
+						}
+
+						BlendSlot
+						{
+							name = "Upper Torso Slot"
+
+							Children
+							{
+								0 = "Stance Node"
+							}
+						}
+
+						BlendByDirection
+						{
+							name = "Directional Run With Shield BBD"
+							blendSpeed = 0.1
+
+							Directions
+							{
+								Forward = "Run Shield Node"
+								Left = "Idle Shield Node"
+								Right = "Run Shield Right Node"
+								Backward = "Idle Shield Node"
+								Idle = "Idle Shield Node"
+								ForwardLeft = "Idle Shield Node"
+								ForwardRight = "Idle Shield Node"
+								BackLeft = "Idle Shield Node"
+								BackRight = "Idle Shield Node"
+							}
+						}
+
+						BlendByDirection
+						{
+							name = "Directional Sneak Slow With Shield BBD"
+							blendSpeed = 0.1
+
+							Directions
+							{
+								Forward = "Sneak Shield Forward Node"
+								Left = "Sneak Shield Left Node"
+								Right = "Sneak Shield Right Node"
+								Backward = "Sneak Shield Backward Node"
+								Idle = "Sneak Idle Shield Node"
+								ForwardLeft = "Sneak Shield Forward Node"
+								ForwardRight = "Sneak Shield Forward Node"
+								BackLeft = "Sneak Shield Backward Node"
+								BackRight = "Sneak Shield Backward Node"
+							}
+						}
+
+						BlendByDirection
+						{
+							name = "Directional Sneak Fast With Shield BBD"
+							blendSpeed = 0.1
+
+							Directions
+							{
+								Forward = "Sneak Shield Fast Forward Node"
+								Left = "Sneak Shield Fast Left Node"
+								Right = "Sneak Shield Fast Right Node"
+								Backward = "Sneak Shield Fast Backward Node"
+								Idle = "Sneak Idle Shield Node"
+								ForwardLeft = "Sneak Shield Fast Forward Node"
+								ForwardRight = "Sneak Shield Fast Forward Node"
+								BackLeft = "Sneak Shield Fast Backward Node"
+								BackRight = "Sneak Shield Fast Backward Node"
+							}
+						}
+
+						BlendState
+						{
+							name = "Shield Player State"
+
+							# This node is active when the player has a shield
+							# equipped but is not blocking
+							# It only poses the bones in the Left Arm Mask.
+
+							state_name = "PlayerState"
+							transitionTime = 0.09
+							initialState = 0
+
+							States
+							{
+								# Walk
+								0 = "Idle Shield Node"
+								# Run
+								1 = "Directional Run With Shield BBD"
+								# Idle
+								2 = "Idle Shield Node"
+								# Crouch Idle
+								11 = "Sneak Idle Shield Node"
+								# Crouch Walk
+								12 = "Directional Sneak Slow With Shield BBD"
+								# Crouch Run
+								13 = "Directional Sneak Fast With Shield BBD"
+								# Flying
+								15 = "Fly Node"
+							}
+						}
+
+						BlendState
+						{
+							name = "Shield Blocking Player State"
+
+							# This node is active when the player has a shield
+							# equipped and is actively blocking
+							# It only poses the bones in the Left Arm Mask.
+
+							state_name = "PlayerState"
+							transitionTime = 0.15
+							initialState = 0
+
+							States
+							{
+								# Walk
+								0 = "Shield Block Loop Node"
+								# Run
+								1 = "Shield Block Loop Node"
+								# Idle
+								2 = "Shield Block Loop Node"
+								# Crouch Idle
+								11 = "Shield Crouch Block Loop Node"
+								# Crouch Walk
+								12 = "Shield Crouch Block Loop Node"
+								# Crouch Run
+								13 = "Shield Crouch Block Loop Node"
+								# Flying
+								15 = "Fly Node"
+							}
+						}
+
+						BlendByFall
+						{
+							name = "Shield Fall Node"
+							transitionTime = 1.0
+
+							States
+							{
+								Up = "Jump Up 2hnd Lf Node"
+								Loop = "Jump 2hnd Lf Node"
+								Land = "Jump Down 2hnd Lf Node"
+								Ground = "Shield Player State"
+							}
+						}
+
+						BlendByGraph
+						{
+							name = "Shield Graph"
+							initialState = "NoShield"
+
+							States
+							{
+								# No shield, not blocking
+								NoShield
+								{
+									Node = "Upper Torso Slot"
+									Transitions
+									{
+										ShieldEquipped
+										{
+											destinationState = "ShieldOn"
+											duration = 0.15
+										}
+									}
+								}
+								# Shield Equipped, not blocking
+								ShieldOn
+								{
+									Node = "Shield Fall Node"
+									Transitions
+									{
+										ShieldUnequipped
+										{
+											destinationState = "NoShield"
+											duration = 0.15
+										}
+										StartBlocking
+										{
+											destinationState = "Blocking"
+											animation = "Shield_Block_In"
+										}
+										StartBlockingCrouch
+										{
+											destinationState = "Blocking"
+											animation = "Shield_Crouch_Block_In"
+										}
+									}
+								}
+								# Shield equipped, actively blocking
+								Blocking
+								{
+									Node = "Shield Blocking Player State"
+									Transitions
+									{
+										ShieldUnequipped
+										{
+											destinationState = "NoShield"
+										}
+										StopBlocking
+										{
+											destinationState = "ShieldOn"
+											animation = "Shield_Block_Out"
+										}
+										StopBlockingCrouch
+										{
+											destinationState = "ShieldOn"
+											animation = "Shield_Crouch_Block_Out"
+										}
+									}
+								}
+							}
+						}
+
+						BlendByBoneMask
+						{
+							name = "Left Arm Bone Mask Node"
+
+							Mask
+							{
+								"Bn_L_Shlder01" = 1.0
+								"Bn_L_Arm01" = 1.0
+								"Bn_L_Elbow01" = 1.0
+								"Bn_L_4Arm01" = 1.0
+								"Bn_L_Twist01" = 1.0
+								"Bn_L_Wrist01" = 1.0
+								"Bn_L_ThumbRoot01" = 1.0
+								"Bn_L_ThumbA01" = 1.0
+								"Bn_L_ThumbB01" = 1.0
+								"Bn_L_MidA01" = 1.0
+								"Bn_L_MidB01" = 1.0
+								"Bn_L_MidC01" = 1.0
+								"Bn_L_PinkA01" = 1.0
+								"Bn_L_PinkB01" = 1.0
+								"Bn_L_PinkC01" = 1.0
+								"Bn_L_PointA01" = 1.0
+								"Bn_L_PointB01" = 1.0
+								"Bn_L_PointC01" = 1.0
+							}
+
+							Children
+							{
+								0 = "Upper Torso Slot"
+								1 = "Shield Graph"
+							}
+						}
+
+						BlendByBoneMask
+						{
+							name = "Upper Torso Bone Mask Node"
+
+							Mask
+							{
+								#"Bn_Root01" = 1.0
+								#"Bn_SpA01" = 0.25
+								"Bn_SpB01" = 0.5
+								"Bn_SpC01" = 1.0
+								"Bn_SpD01" = 1.0
+								"Bn_SpE01" = 1.0
+								"Bn_Neck01" = 1.0
+								"Bn_Head01" = 1.0
+								"Bn_L_Shlder01" = 1.0
+								"Bn_L_Arm01" = 1.0
+								"Bn_L_Elbow01" = 1.0
+								"Bn_L_4Arm01" = 1.0
+								"Bn_L_Twist01" = 1.0
+								"Bn_L_Wrist01" = 1.0
+								"Bn_L_ThumbRoot01" = 1.0
+								"Bn_L_ThumbA01" = 1.0
+								"Bn_L_ThumbB01" = 1.0
+								"Bn_L_MidA01" = 1.0
+								"Bn_L_MidB01" = 1.0
+								"Bn_L_MidC01" = 1.0
+								"Bn_L_PinkA01" = 1.0
+								"Bn_L_PinkB01" = 1.0
+								"Bn_L_PinkC01" = 1.0
+								"Bn_L_PointA01" = 1.0
+								"Bn_L_PointB01" = 1.0
+								"Bn_L_PointC01" = 1.0
+								"Bn_R_Shlder01" = 1.0
+								"Bn_R_Arm01" = 1.0
+								"Bn_R_Elbow01" = 1.0
+								"Bn_R_4Arm01" = 1.0
+								"Bn_R_Twist01" = 1.0
+								"Bn_R_Wrist01" = 1.0
+								"Bn_R_ThumbRoot01" = 1.0
+								"Bn_R_ThumbA01" = 1.0
+								"Bn_R_ThumbB01" = 1.0
+								"Bn_R_MidA01" = 1.0
+								"Bn_R_MidB01" = 1.0
+								"Bn_R_MidC01" = 1.0
+								"Bn_R_PinkA01" = 1.0
+								"Bn_R_PinkB01" = 1.0
+								"Bn_R_PinkC01" = 1.0
+								"Bn_R_PointA01" = 1.0
+								"Bn_R_PointB01" = 1.0
+								"Bn_R_PointC01" = 1.0
+								"Bn_Tool01" = 1.0
+							}
+
+							Children
+							{
+								0 = "Fall WithWithout Weapon Node"
+								1 = "Left Arm Bone Mask Node"
+							}
+						}
+
+
+
+						BlendSlot
+						{
+							name = "Full Body Slot"
+
+							Children
+							{
+								0 = "Upper Torso Bone Mask Node"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
