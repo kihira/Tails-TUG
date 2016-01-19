@@ -16,7 +16,7 @@
 				file = "Scripts/Tail.lua"
 				class = "Tail"
 			}
-			MorphGraphics
+			AnimatedGraphics
 			{
 				scale = 0.023
 				model = "Character/Tail/Rig.fbx"
@@ -26,11 +26,9 @@
 				{
 				  0 = "Character/Tail/Geo_FoxTail.tga"
 				}
-				Glow
-				{
-				}
 				Normal
 				{
+				  0 = "Character/Tail/Geo_FoxTail_norm.tga"
 				}
 				Animations
 				{
@@ -52,6 +50,7 @@
 					}
 				}
 			}
+
 		}
 	}
 }
