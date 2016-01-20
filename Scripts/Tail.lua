@@ -19,12 +19,12 @@ function Tail:PostLoad( )
 end
 
 function Tail:Update( dt )
-    --local gfx = self:NKGetAnimatedGraphics()
+    local gfx = self:NKGetAnimatedGraphics()
     --gfx:GetBlendInfo():NKSetState("Idle State", 0)
-    --if not gfx:NKGetBlendSlot("Full Body Slot"):GetPlayingAnimation() then
-        --NKWarn("Starting animation")
-       --gfx:NKGetBlendSlot("Full Body Slot"):NKPlayCustomAnimHold(gfx:GetAnimation("Idle"), 0.1, true)
-    --end
+    if not gfx:NKGetBlendSlot("Full Body Slot"):GetPlayingAnimation() then
+        NKWarn("Starting animation")
+       gfx:NKGetBlendSlot("Full Body Slot"):NKPlayCustomAnimHold(gfx:GetAnimation("Idle"), 0.1, true)
+    end
 end
 
 function Tail:Spawn()
