@@ -1,0 +1,22 @@
+{
+    "Name": "Tails",
+    "Summary": "Because everyone needs a tail",
+    "Description": "",
+    "Website": "Devotus.github.io/TUG-Tails",
+    "Icon": "",
+    "Active": false,
+    "TargetGame": {
+        "Name": "TUG"
+    },
+    "Authors": [
+        {
+            "GitUsername": "Kihira",
+            "NkUsername": "Kihira",
+            "Email": "zoe.kihira.lee@gmail.com"
+        }
+    ],
+    "Dependencies": [],
+    "Categories": [
+        "Cosmetics"
+    ]
+}
