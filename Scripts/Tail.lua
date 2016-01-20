@@ -2,7 +2,7 @@
 include("Scripts/Objects/PlaceableObject.lua")
 -------------------------------------------------------------------------------
 
-Tail = PlaceableObject.Subclass("Tail")
+Tail = EternusEngine.GameObjectClass.Subclass("Tail")
 
 -------------------------------------------------------------------------------
 
@@ -13,7 +13,6 @@ end
 
 -------------------------------------------------------------------------------
 function Tail:PostLoad( )
-    Tail.__super.PostLoad(self)
     self:NKSetControllerCapsuleSize(0, 0)
     self:NKEnableScriptProcessing(true)
 end
@@ -28,7 +27,6 @@ function Tail:Update( dt )
 end
 
 function Tail:Spawn()
-    Tail.__super.Spawn(self)
     --local gfx = self:NKGetAnimatedGraphics()
     --gfx:GetBlendInfo():NKSetState("Idle State", 0)
 end
