@@ -1,0 +1,43 @@
+
+{
+	Tail
+	{
+		Tail
+		{
+			# Mark this GameObject as a startup-time loaded assets.
+			Preload
+			NoCull
+
+			Transform
+			{
+			}
+			Script
+			{
+				file = "Scripts/Tail.lua"
+				class = "Tail"
+			}
+			AnimatedGraphics
+			{
+				scale = 0.023
+				model = "Character/Tail/Rig2 - UV.fbx"
+				Offset = <0.0, 0.0, 0.0>
+
+				Diffuse
+				{
+				  0 = "Character/Tail/Geo_FoxTail.tga"
+				}
+				Normal
+				{
+				  0 = "Character/Tail/Geo_FoxTail_norm.tga"
+				}
+				Animations
+				{
+					Idle
+					{
+						path = "Character/Tail/Idle.fbx"
+					}
+				}
+			}
+	  }
+	}
+}
