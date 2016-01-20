@@ -19,7 +19,7 @@
 			AnimatedGraphics
 			{
 				scale = 0.023
-				model = "Character/Tail/Rig2.fbx"
+				model = "Character/Tail/Rig2 - UV.fbx"
 				Offset = <0.0, 0.0, 0.0>
 
 				Diffuse
@@ -33,24 +33,11 @@
 				Animations
 				{
 					Idle
-        	{
-        		path = "Character/Tail/Idle.fbx"
-        	}
-				}
-				BlendTree
-				{
-					root = "Full Body Slot"
-					Nodes
 					{
-						BlendLeaf
-						{
-							name = "Idle Node"
-							animation = "Idle"
-						}
+						path = "Character/Tail/Idle.fbx"
 					}
 				}
 			}
-
-		}
+	  }
 	}
 }
