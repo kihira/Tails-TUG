@@ -20,7 +20,7 @@ GameObjects
 			AnimatedGraphics
 			{
 				scale = 0.023
-				model = "Character/Tail/Rig3.fbx"
+				model = "Character/Tail/Rig2 - mod.fbx"
 				Offset = <0.0, 0.0, 0.0>
 
 				Diffuse
@@ -36,65 +36,6 @@ GameObjects
 					Idle
 					{
 						path = "Character/Tail/Idle.fbx"
-					}
-				}
-				BlendTree
-				{
-					root = "Full Body Slot"
-					Nodes
-					{
-						BlendLeaf
-						{
-							name = "Idle Node"
-							animation = "Idle"
-							loop = 1
-						}
-						BlendSlot
-            {
-            	name = "Full Body Slot"
-
-            	Children
-            	{
-              	0 = "Idle State"
-            	}
-            }
-						BlendState
-            {
-            	name = "Idle State"
-            	state_name = "IdleState"
-            	transitionTime = 0.1
-
-              States
-            	{
-                0 = "Idle Node"
-            	}
-            }
-						BlendByBoneMask
-						{
-							name = "Bone Mask Node"
-
-							Mask
-							{
-								"Bn_SpA01" = 1.0
-								"Bn_SpB01" = 1.0
-								"Bn_Tail01" = 1.0
-								"Bn_Tail02" = 1.0
-								"Bn_Tail03" = 1.0
-								"Bn_Tail04" = 1.0
-								"Bn_Tail05" = 1.0
-								"Bn_Tail06" = 1.0
-								"Bn_Tail07" = 1.0
-								"Bn_Tail08" = 1.0
-								"Bn_Tail09" = 1.0
-								"Bn_Tail10" = 1.0
-							}
-
-							Children
-							{
-								0 = "Idle Node"
-								1 = "Full Body Slot"
-							}
-						}
 					}
 				}
 			}

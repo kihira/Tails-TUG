@@ -14,7 +14,7 @@ end
 -------------------------------------------------------------------------------
 function Tail:PostLoad( )
     Tail.__super.PostLoad(self)
-    self:NKSetControllerCapsuleSize(10, 10)
+    self:NKSetControllerCapsuleSize(0, 0)
     self:NKEnableScriptProcessing(true)
 end
 

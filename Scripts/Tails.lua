@@ -29,14 +29,15 @@ local BasePlayer__SetThirdPersonGameObject = BasePlayer._SetThirdPersonGameObjec
 BasePlayer._SetThirdPersonGameObject = function(self, ...)
     BasePlayer__SetThirdPersonGameObject(self, ...)
 
-    self.m_tail = Eternus.GameObjectSystem:NKCreateGameObject("Tail", true)
+    self.m_tail = Eternus.GameObjectSystem:NKCreateGameObject("Tail3", true)
+    self.m_tail:NKPlaceInWorld(false, false)
     self.m_3pobject:NKAddChildObject(self.m_tail)
-    --self.m_tail:NKSetAttachBone("Bn_SpB01")
-    --self.m_3pobject:NKAddChildAtAttachPoint(self.m_tail, "Bn_Tail01", "Bn_SpB01", true)
+    self.m_tail:NKSetAttachBone("Bn_SpB01")
     self.m_tail.m_player = self
-    self.m_tail:NKSetPosition(vec3.new(0.0, 0.0, 0.0), false)
-    self.m_tail:NKSetOrientation(quat.new(1.0, 0.0, 0.0, 0.0))
-    --self.m_tail:NKScale(1.0, false)
+    --self.m_tail:NKSetPosition(vec3.new(0.0, 0.0, 0.0), false)
+    local rot = quat.new(0.5, 0, 0.86603, 0)
+    rot = rot * quat.new(0.70711, -0.70711, 0, 0)
+    self.m_tail:NKSetOrientation(rot)
 end
 
 -------------------------------------------------------------------------------
