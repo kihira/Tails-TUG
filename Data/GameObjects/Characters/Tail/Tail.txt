@@ -19,7 +19,7 @@
 			AnimatedGraphics
 			{
 				scale = 0.023
-				model = "Character/Tail/Rig.fbx"
+				model = "Character/Tail/Rig2.fbx"
 				Offset = <0.0, 0.0, 0.0>
 
 				Diffuse

@@ -1,34 +1,36 @@
 -- Tail
+include("Scripts/Objects/PlaceableObject.lua")
 -------------------------------------------------------------------------------
 
-Tail = EternusEngine.GameObjectClass.Subclass("Tail")
+Tail = PlaceableObject.Subclass("Tail")
 
 -------------------------------------------------------------------------------
 
-function Tail:Constructor( )
+function Tail:Constructor( args )
+    --Tail.__super.Constructor(args)
     self.m_player = nil
 end
 
 -------------------------------------------------------------------------------
 function Tail:PostLoad( )
+    Tail.__super.PostLoad(self)
     self:NKSetControllerCapsuleSize(10, 10)
     self:NKEnableScriptProcessing(true)
-    NKWarn("Post load")
 end
 
 function Tail:Update( dt )
-    if self.m_player and not self.m_player:IsDead() then
-        self:NKSetShouldRender(true, true)
-        --self:NKSetPosition(self.m_player.m_3pobject:NKGetPosition())
-        --self:NKSetOrientation(self.m_player.m_3pobject:NKGetOrientation())
-        --NKWarn(self:NKGetPosition():NKToString())
-    else
-        --NKWarn("Player dead")
-    end
+    --local gfx = self:NKGetAnimatedGraphics()
+    --gfx:GetBlendInfo():NKSetState("Idle State", 0)
+    --if not gfx:NKGetBlendSlot("Full Body Slot"):GetPlayingAnimation() then
+        --NKWarn("Starting animation")
+       --gfx:NKGetBlendSlot("Full Body Slot"):NKPlayCustomAnimHold(gfx:GetAnimation("Idle"), 0.1, true)
+    --end
 end
 
 function Tail:Spawn()
-
+    Tail.__super.Spawn(self)
+    --local gfx = self:NKGetAnimatedGraphics()
+    --gfx:GetBlendInfo():NKSetState("Idle State", 0)
 end
 
 EntityFramework:RegisterGameObject(Tail)

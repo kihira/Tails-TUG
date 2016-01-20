@@ -1,0 +1,137 @@
+
+GameObjects
+{
+	PlaceableObject
+	{
+		Tail3
+		{
+			# Mark this GameObject as a startup-time loaded assets.
+			Preload
+			NoCull
+
+			Transform
+			{
+			}
+			Script
+			{
+				file = "Scripts/Tail.lua"
+				class = "Tail"
+			}
+			AnimatedGraphics
+			{
+				scale = 0.023
+				model = "Character/Tail/Rig3.fbx"
+				Offset = <0.0, 0.0, 0.0>
+
+				Diffuse
+				{
+				  0 = "Character/Tail/Geo_FoxTail.tga"
+				}
+				Normal
+				{
+				  0 = "Character/Tail/Geo_FoxTail_norm.tga"
+				}
+				Animations
+				{
+					Idle
+					{
+						path = "Character/Tail/Idle.fbx"
+					}
+				}
+				BlendTree
+				{
+					root = "Full Body Slot"
+					Nodes
+					{
+						BlendLeaf
+						{
+							name = "Idle Node"
+							animation = "Idle"
+							loop = 1
+						}
+						BlendSlot
+            {
+            	name = "Full Body Slot"
+
+            	Children
+            	{
+              	0 = "Idle State"
+            	}
+            }
+						BlendState
+            {
+            	name = "Idle State"
+            	state_name = "IdleState"
+            	transitionTime = 0.1
+
+              States
+            	{
+                0 = "Idle Node"
+            	}
+            }
+						BlendByBoneMask
+						{
+							name = "Bone Mask Node"
+
+							Mask
+							{
+								"Bn_SpA01" = 1.0
+								"Bn_SpB01" = 1.0
+								"Bn_Tail01" = 1.0
+								"Bn_Tail02" = 1.0
+								"Bn_Tail03" = 1.0
+								"Bn_Tail04" = 1.0
+								"Bn_Tail05" = 1.0
+								"Bn_Tail06" = 1.0
+								"Bn_Tail07" = 1.0
+								"Bn_Tail08" = 1.0
+								"Bn_Tail09" = 1.0
+								"Bn_Tail10" = 1.0
+							}
+
+							Children
+							{
+								0 = "Idle Node"
+								1 = "Full Body Slot"
+							}
+						}
+					}
+				}
+			}
+
+			Physics
+			{
+				Colliders
+				{
+					Capsule
+					{
+						height = 0.85
+						radius = 1
+						mass = 10.0
+						convex = 0
+						material = "STONE"
+					}
+				}
+				Rigidbody
+				{
+					keyframed = 1
+				}
+			}
+
+			Placeable
+			{
+				name = "Tail3"
+				icon = "Tail3"
+				minScale = 1.0
+				maxScale = 1.0
+				
+				category = "Metal"
+				tier = 3
+				resource = 1
+				maxStackCount = 10.0
+				
+				placementSound = "MetalDig"
+			}
+		}
+	}
+}
