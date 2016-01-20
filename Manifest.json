@@ -4,7 +4,7 @@
   "Description": "",
   "Website": "Devotus.github.io/TUG-Tails",
   "Icon": "",
-  "Active": false,
+  "Active": true,
   "TargetGame": {
     "Name": "TUG"
   },
