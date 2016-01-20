@@ -20,7 +20,7 @@ GameObjects
 			AnimatedGraphics
 			{
 				scale = 0.023
-				model = "Character/Tail/Rig2 - mod.fbx"
+				model = "Character/Tail/Rig2 - UV.fbx"
 				Offset = <0.0, 0.0, 0.0>
 
 				Diffuse

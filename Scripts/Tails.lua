@@ -29,6 +29,12 @@ local BasePlayer__SetThirdPersonGameObject = BasePlayer._SetThirdPersonGameObjec
 BasePlayer._SetThirdPersonGameObject = function(self, ...)
     BasePlayer__SetThirdPersonGameObject(self, ...)
 
+    -- Ignore wisp/death state
+    local param = {...}
+    if param[1] == "Wisp" then
+        return
+    end
+
     self.m_tail = Eternus.GameObjectSystem:NKCreateGameObject("Tail3", true)
     self.m_tail:NKPlaceInWorld(false, false)
     self.m_3pobject:NKAddChildObject(self.m_tail)
