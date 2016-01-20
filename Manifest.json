@@ -1,22 +1,27 @@
 {
-    "Name": "Tails",
-    "Summary": "Because everyone needs a tail",
-    "Description": "",
-    "Website": "Devotus.github.io/TUG-Tails",
-    "Icon": "",
-    "Active": false,
-    "TargetGame": {
-        "Name": "TUG"
-    },
-    "Authors": [
-        {
-            "GitUsername": "Kihira",
-            "NkUsername": "Kihira",
-            "Email": "kitsunekihira@gmail.com"
-        }
-    ],
-    "Dependencies": [],
-    "Categories": [
-        "Cosmetics"
-    ]
+  "Name": "Tails",
+  "Summary": "Because everyone needs a tail",
+  "Description": "",
+  "Website": "Devotus.github.io/TUG-Tails",
+  "Icon": "",
+  "Active": false,
+  "TargetGame": {
+    "Name": "TUG"
+  },
+  "Authors": [
+    {
+      "GitUsername": "Kihira",
+      "NkUsername": "Kihira",
+      "Email": "kitsunekihira@gmail.com"
+    }
+  ],
+  "Dependencies": [],
+  "Categories": [
+    "Cosmetics"
+  ],
+  "Media": [],
+  "Script": {
+    "File": "Scripts/Tails.lua",
+    "Class": "Tails"
+  }
 }
